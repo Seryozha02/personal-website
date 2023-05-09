@@ -1,0 +1,296 @@
+.divForProjectsPage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-bottom: 70px;
+    transition: 2s ease-in-out;
+}
+
+.divForProjectsPageDarkMode {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-bottom: 70px;
+    background-color: rgb(40, 40, 40);
+    transition: 2s ease-in-out;
+}
+
+.projectsBothSides {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectsBothSides h1 {
+    text-align: center;
+    transition: 2s ease-in-out;
+}
+
+.projectsBothSidesDarkMode h1 {
+    text-align: center;
+    color: whitesmoke;
+    transition: 2s ease-in-out;
+}
+
+.projectsBothSidesDarkMode {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectLeftSide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.projectLeftSideDarkMode {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+
+.projectLeftSide img {
+    width: 500px;
+    height: 300px;
+}
+
+.projectLeftSideDarkMode img {
+    width: 500px;
+    height: 300px;
+}
+
+.projectLeftSide span {
+    width: 500px;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 25px;
+    transition: 2s ease-in-out;
+}
+
+.projectLeftSideDarkMode span {
+    width: 500px;
+    word-wrap: break-word;
+    color: whitesmoke;
+    text-align: center;
+    transition: 2s ease-in-out;
+    font-size: 25px;
+}
+
+.projectLeftSide div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.projectLeftSideDarkMode div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    transition: 2s;
+}
+
+
+.projectsRightSide {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.projectsRightSideDarkMode {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.projectsRightSide img {
+    width: 500px;
+    height: 300px;
+}
+
+.projectsRightSideDarkMode img {
+    width: 500px;
+    height: 300px;
+}
+
+.projectsRightSide span {
+    width: 500px;
+    word-wrap: break-word;
+    text-align: center;
+    transition: 2s ease-in-out;
+    font-size: 25px;
+}
+
+.projectsRightSideDarkMode span {
+    text-align: center;
+    width: 500px;
+    word-wrap: break-word;
+    font-size: 25px;
+    color: whitesmoke;
+    transition: 2s ease-in-out;
+}
+
+
+.projectsRightSide div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.projectsRightSideDarkMode div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    transition: 2s;
+}
+
+
+.sourceCodeButton {
+    padding: 13px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #49f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sourceCodeButtonDarkMode {
+    padding: 13px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #49f;
+    color: whitesmoke;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+}
+
+
+.projectsBothSides p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 2s ease-in-out;
+}
+
+.projectsBothSidesDarkMode p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    transition: 2s ease-in-out;
+}
+
+span button {
+    padding: 5px 15px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+}
+
+.projectsBothSidesDarkMode span button {
+    padding: 5px 15px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .projectLeftSide img, .projectLeftSideDarkMode img {
+        width: 400px;
+        height: 200px;
+    }
+    
+    .projectsRightSide img, .projectsRightSideDarkMode img {
+        width: 400px;
+        height: 200px;
+    }
+    .projectLeftSide span, .projectLeftSideDarkMode span {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    
+    .projectsRightSide span, .projectsRightSideDarkMode span {
+        width: 400px;
+        font-size: 20px;
+    }
+    
+    .sourceCodeButton, .sourceCodeButtonDarkMode {
+        padding: 10px 23px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .divForProjectsPage, .divForProjectsPageDarkMode {
+        row-gap: 30px;
+    }
+
+    .projectsBothSides, .projectsBothSidesDarkMode {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .projectLeftSide, .projectLeftSideDarkMode {
+        row-gap: 50px;
+    }
+
+    .projectsRightSide, .projectsRightSideDarkMode {
+        row-gap: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .projectLeftSide img, .projectLeftSideDarkMode img {
+        width: 300px;
+        height: 150px;
+    }
+    
+    .projectsRightSide img, .projectsRightSideDarkMode img {
+        width: 300px;
+        height: 150px;
+    }
+    .projectLeftSide span, .projectLeftSideDarkMode span {
+        width: 300px;
+        font-size: 17px;
+
+    }
+
+    
+    .projectsRightSide span, .projectsRightSideDarkMode span {
+        width: 300px;
+        font-size: 17px;
+
+    }
+
+    span button {
+        padding: 3px 12px;
+        font-size: 13px;
+    }
+    
+    .projectsBothSidesDarkMode span button {
+        padding: 3px 12px;
+        font-size: 13px;
+    }
+    
+}

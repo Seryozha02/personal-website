@@ -1,0 +1,95 @@
+ .contactPage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    margin-bottom: 15px;
+    transition: 2s ease-in-out;
+}
+
+.contactPageDarkMode {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    margin-bottom: 15px;
+    background-color: rgb(40, 40, 40);
+    transition: 2s ease-in-out;
+}
+    
+.divForContactPart {
+    width: 600px;
+    height: 500px;
+    border-radius: 25px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.divForContactPart form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+form input {
+    text-align: center;
+    width: 350px;
+    font-size: 15px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px black solid;
+}
+
+form textarea {
+    font-size: 15px;
+    resize: none;
+    width: 350px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px black solid;
+}
+
+textarea::placeholder { 
+    text-align: center;
+}
+
+form button {
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #49f;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .divForContactPart {
+        width: 350px;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .divForContactPart form{
+        row-gap: 20px;
+    }
+
+    form input {
+        width: 300px;
+        font-size: 13px;
+        height: 40px;
+    }
+    
+    form textarea {
+        font-size: 13px;
+        width: 300px;
+        height: 80px;
+    }
+
+    form button {
+        padding: 10px 23px;
+        border-radius: 5px;
+    }
+}

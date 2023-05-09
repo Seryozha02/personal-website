@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.divForHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+
+.headerOfPages {
+  display: flex;
+  padding: 25px;
+  column-gap: 40px;
+}
+
+.navBar {
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
+  color: whitesmoke;
+  transition: 0.4s ease-in-out;
+  font-family: 'Cabin', Sans-serif;
+}
+
+.navBar:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color: rgb(152, 198, 255);
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navBar:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navBar:hover {
+  color: rgb(152, 198, 255);
+}
+
+.active {
+  color: rgb(152, 198, 255);
+}
+
+.divForLogo {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.divForLogo p.A {
+  color: white;
+  font-size: 25px;
+}
+
+.divForLogo p.S {
+  color: #0087ca;
+  font-size: 25px;
+}
+
+
+.moon:hover {
+  animation: rotation 2s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.sun:hover {
+  animation: rotation 2s linear infinite;
+  cursor: pointer;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.buttonForModeChanging {
+  background-color: black;
+  border: none;
+}  
+
+.divForLogoMobile {
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.divForLogoMobile img {
+  cursor: pointer;
+}
+
+.logoInMobileVersion {
+  display: flex;
+}
+
+.divForLogoMobile p.A {
+  color: white;
+  font-size: 25px;
+}
+
+.divForLogoMobile p.S {
+  color: #0087ca;
+  font-size: 25px;
+}
+
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 30px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      black, black 20%, 
+      white 20%, white 40%, 
+      black 40%, black 60%, 
+      white 60%, white 80%, 
+      black 80%, black 100%
+    );
+}
+
+
+/* #overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  background: black;
+  z-index: -1;
+} */
+
+
+#sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;   /* -100% */
+    width: 200px;   /* 100% */
+    height: 100%;
+    background-color: black;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.headerOfPagesMobile {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  margin: 0 auto;
+  row-gap: 20px;
+}
+
+.navBarMobile {
+  color: whitesmoke;
+  position: relative;
+  font-size: 22px;
+  text-decoration: none;
+  /* transition: 0.4s ease-in-out; */
+}
+
+.navBarMobile.active {
+  color: rgb(152, 198, 255);
+}
+
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+
+
+@media screen and (max-width: 750px) {
+  
+/* #hamburger-input:checked ~ #overlay{
+  visibility: visible;
+  opacity: 0.5;
+} */
+
+  .navBar {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: inline;
+  }
+
+  .divForLogo {
+    visibility: hidden;
+  }
+
+}

@@ -1,0 +1,6 @@
+.notFoundPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 70px;
+}

@@ -1,0 +1,106 @@
+.rezumePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+    margin-bottom: 15px;
+    transition: 2s ease-in-out;
+}
+
+.rezumePageDarkMode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+    margin-bottom: 15px;
+    background-color: rgb(40, 40, 40);
+    transition: 2s ease-in-out;
+}
+
+.divForRezume {
+    display: flex;
+    justify-content: center;
+    row-gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myCV {
+    width: 550px;
+    height: 750px;
+}
+
+.downloadCV {
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #49f;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.spanForRezume {
+    font-size: 25px;
+    transition: 2s ease-in-out;
+}
+
+.rezumePageDarkMode span {
+    font-size: 25px;
+    color: whitesmoke;
+    transition: 2s ease-in-out;
+}
+
+.downloadButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.downloadButtonsDarkMode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 25px;
+}
+
+.downloadButtons p {
+    font-size: 20px;
+    transition: 2s ease-in-out;
+}
+
+.downloadButtonsDarkMode p {
+    font-size: 20px;
+    color: whitesmoke;
+    transition: 2s ease-in-out;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .myCV {
+        width: 400px;
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .myCV {
+        width: 380px;
+
+    }
+    .downloadButtons {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .rezumePage span {
+        width: 350px;
+        text-align: center;
+    }
+}
