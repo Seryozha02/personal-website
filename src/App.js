@@ -9,11 +9,9 @@ import RezumePage from "./components/RezumePage";
 import { useEffect, useState } from "react";
 import iconForDarkMode from "./Images/moon.png"
 import iconForLightMode from "./Images/sun.png"
-import closeIcon from "./Images/close.png"
 
 function App() {
   const [changingMode, setChangingMode] = useState("light")
-  const [sdBarOpenAndClose, setsdBarOpenAndClose] = useState("close")
 
   useEffect(() => {
       const savingModeInLocalStrg = localStorage.getItem("changingMode")
@@ -119,8 +117,3 @@ function App() {
 }
 
 export default App;
-
-
-
-// checkbox-i valuen erb true-a sideBar-y baca erb falsy pag....
-//petqa stugel ete navLink-i className-y active-a uremn petqa checkboxy sarqel false ete che che

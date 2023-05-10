@@ -5,10 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
 import "./index.css"
+import ScrollToTop from './ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <HashRouter>
+        <ScrollToTop />
         <App />
     </HashRouter>
 );

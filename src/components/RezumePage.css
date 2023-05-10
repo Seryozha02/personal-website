@@ -91,13 +91,13 @@
         width: 300px;
         height: 450px;
     }
-    .downloadButtons {
+    .downloadButtons, .downloadButtonsDarkMode {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
     }
 
-    .rezumePage span {
+    .rezumePage span, .rezumePageDarkMode span {
         width: 350px;
         text-align: center;
     }
