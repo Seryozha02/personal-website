@@ -2,5 +2,25 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 70px;
+    row-gap: 200px;
+    transition: 2s ease-in-out;
+    height: calc(100vh - 79px);
+}
+
+.notFoundPageDarkMode {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 200px;
+    background-color: rgb(40, 40, 40);
+    transition: 2s ease-in-out;
+    height: calc(100vh - 79px);
+}
+
+
+@media only screen and (max-width: 530px) {
+    .IDK {
+        width: 325px;
+        height: 275px;
+    }
 }

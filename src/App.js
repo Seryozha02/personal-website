@@ -9,9 +9,11 @@ import RezumePage from "./components/RezumePage";
 import { useEffect, useState } from "react";
 import iconForDarkMode from "./Images/moon.png"
 import iconForLightMode from "./Images/sun.png"
+import closeIcon from "./Images/close.png"
 
 function App() {
   const [changingMode, setChangingMode] = useState("light")
+  const [sdBarOpenAndClose, setsdBarOpenAndClose] = useState("close")
 
   useEffect(() => {
       const savingModeInLocalStrg = localStorage.getItem("changingMode")
@@ -55,15 +57,20 @@ function App() {
 
             <label id="hamburger-menu" htmlFor="hamburger-input">
               <nav id="sidebar-menu">
+                          <input type="checkbox" id="hamburger-input" onClick={() => {
+                            const sdBarOpen = document.getElementById("sidebar-menu")
+                            sdBarOpen.style.visibility = "visible"
+                            sdBarOpen.style.left = "0"
+                          }}/>
                       <div className="divForLogoMobile">
                           <p className="A">A</p><p className="S">S</p>
+                          {/* <img src={closeIcon} onClick={() => {
+                            const sideBarCloser = document.getElementById("sidebar-menu");
+                            sideBarCloser.style.visibility = "hidden"
+                            sideBarCloser.style.left = "-250px"
+                          }}/> */}
                       </div>
                     
-          <input type="checkbox" id="hamburger-input" onClick={() => {
-            const sdBarOpen = document.getElementById("sidebar-menu")
-            sdBarOpen.style.visibility = "visible"
-            sdBarOpen.style.left = "0"
-          }}/>
 
           <header className="headerOfPagesMobile" >
               <NavLink className="navBarMobile" onClick={() => {

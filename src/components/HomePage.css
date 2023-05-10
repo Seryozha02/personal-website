@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    margin-bottom: 15px;
+    height: calc(100vh - 79px);
     transition: 2s ease-in-out;
 }
 
@@ -10,8 +10,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    height: 100%;
-    margin-bottom: 15px;
+    height: calc(100vh - 79px);
     background-color: rgb(40, 40, 40);
     transition: 2s ease-in-out;
 }
@@ -152,10 +151,6 @@
         display: flex;
         flex-direction: column-reverse;
         row-gap: 15px;
-    }
-
-    .homePage, .homePageDarkMode {
-        row-gap: 30px;
     }
 
     .after850pxDarkMode {

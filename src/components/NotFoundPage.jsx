@@ -4,7 +4,7 @@ import "./NotFoundPage.css"
 
 function NotFoundPage({changingMode}) {
   return (
-    <div className="notFoundPage">
+    <div className={changingMode === "light" ? "notFoundPage" : "notFoundPageDarkMode"}>
       <h1
         className={
           changingMode === "light" ? "pageTittle" : "pageTittleDarkMode"

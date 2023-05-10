@@ -2,15 +2,15 @@
     display: flex;
     flex-direction: column;
     row-gap: 50px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     transition: 2s ease-in-out;
 }
 
 .divForProjectsPageDarkMode {
     display: flex;
+    padding-bottom: 70px;
     flex-direction: column;
     row-gap: 50px;
-    margin-bottom: 70px;
     background-color: rgb(40, 40, 40);
     transition: 2s ease-in-out;
 }
