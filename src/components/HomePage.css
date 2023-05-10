@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    height: calc(100vh - 79px);
+    min-height: 100vh;
     transition: 2s ease-in-out;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 100px;
-    height: calc(100vh - 79px);
+    min-height: 100vh;
     background-color: rgb(40, 40, 40);
     transition: 2s ease-in-out;
 }

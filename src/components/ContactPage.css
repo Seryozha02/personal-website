@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     row-gap: 80px;
-    height: calc(100vh - 79px);
+    min-height: 100vh;
     transition: 2s ease-in-out;
 }
 
 .contactPageDarkMode {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 79px);
     row-gap: 80px;
     background-color: rgb(40, 40, 40);
     transition: 2s ease-in-out;
