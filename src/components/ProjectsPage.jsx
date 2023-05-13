@@ -27,7 +27,7 @@ function ProjectsPage({changingMode}) {
   ];
 
   const [showMore, setShowMore] = useState([]);
-  const maxLetter = 35;
+  const maxLetter = 37;
 
   function showMoreOrLess(index) {
     const newShowMore = [...showMore];

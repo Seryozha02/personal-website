@@ -74,38 +74,49 @@
 }
 
 
-.moon:hover {
-  animation: rotation 2s linear infinite;
-  cursor: pointer;
-}
 
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-}
-
-.sun:hover {
-  animation: rotation 2s linear infinite;
-  cursor: pointer;
-}
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-}
-
-.buttonForModeChanging {
+.moon {
+  background-image: url("./Images/moon.png");
+  animation: rotationForMoon 2s;
   background-color: black;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
   border: none;
+  transition: 2s;
 }  
+
+
+@keyframes rotationForMoon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.sun {
+  background-image: url("./Images/sun.png");
+  animation: rotationForSun 2s;
+  background-color: black;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: none;
+  transition: 2s;
+}
+
+@keyframes rotationForSun {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
 
 .divForLogoMobile {
   display: flex;
@@ -159,28 +170,12 @@
     );
 }
 
-
-/* #overlay{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden;
-  background: black;
-  z-index: -1;
-} */
-
-
 #sidebar-menu {
     visibility: hidden;
     position: fixed;
     top: 0;
-    left: -250px;   /* -100% */
-    width: 200px;   /* 100% */
+    left: -250px;   
+    width: 200px;   
     height: 100%;
     background-color: black;
     transition: 0.3s;

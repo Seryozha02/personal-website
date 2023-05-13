@@ -47,9 +47,7 @@ function App() {
               <NavLink className="navBar" to="/about">About</NavLink>
               <NavLink className="navBar" to="/rezume">Rezume</NavLink>
               <NavLink className="navBar" to="/contact">Contact</NavLink>
-            <button className="buttonForModeChanging" onClick={ darkAndLightMode }>
-                {changingMode === "light" ? <img className="moon" src={iconForDarkMode} alt=""/> : <img className="sun" src={iconForLightMode} alt=""/>}
-              </button>
+              <button className={changingMode === "light" ? "moon" : "sun"} onClick={ darkAndLightMode } />
           </header>
 
 
