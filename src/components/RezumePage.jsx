@@ -39,6 +39,7 @@ function RezumePage({changingMode}) {
                 <button className="downloadCV" onClick={cvDownloadPDF}>Download CV as PDF</button>
                 <p>or</p>
                 <button className="downloadCV" onClick={cvDownloadPNG}>Download CV as PNG</button>
+            <br />
             </div>
         </div>
     )
