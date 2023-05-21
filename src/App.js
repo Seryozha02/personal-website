@@ -7,8 +7,6 @@ import NotFoundPage from "./components/NotFoundPage";
 import ProjectsPage from "./components/ProjectsPage";
 import RezumePage from "./components/RezumePage";
 import { useEffect, useState } from "react";
-import iconForDarkMode from "./Images/moon.png"
-import iconForLightMode from "./Images/sun.png"
 
 function App() {
   const [changingMode, setChangingMode] = useState("light")
@@ -26,6 +24,12 @@ function App() {
 
       localStorage.setItem("changingMode", modeChanged)
   };
+
+  function outsideCloser() {
+    const sideBarCloser = document.getElementById("sidebar-menu");
+    sideBarCloser.style.visibility = "hidden"
+    sideBarCloser.style.left = "-250px"
+  }
 
   const navigation = useNavigate()
 
@@ -59,41 +63,16 @@ function App() {
                             sdBarOpen.style.left = "0"
                           }}/>
                       <div className="divForLogoMobile">
-                          <p className="A">A</p><p className="S">S</p>
-                          {/* <img src={closeIcon} onClick={() => {
-                            const sideBarCloser = document.getElementById("sidebar-menu");
-                            sideBarCloser.style.visibility = "hidden"
-                            sideBarCloser.style.left = "-250px"
-                          }}/> */}
+                             <p className="A">A</p><p className="S">S</p>
                       </div>
                     
 
           <header className="headerOfPagesMobile" >
-              <NavLink className="navBarMobile" onClick={() => {
-                const sideBarCloser = document.getElementById("sidebar-menu");
-                sideBarCloser.style.visibility = "hidden"
-                sideBarCloser.style.left = "-250px"
-              }} to="/">Home</NavLink>
-              <NavLink className="navBarMobile" onClick={() => {
-                 const sideBarCloser = document.getElementById("sidebar-menu");
-                 sideBarCloser.style.visibility = "hidden"
-                 sideBarCloser.style.left = "-250px"
-              }} to="/projects">Projects</NavLink>
-              <NavLink className="navBarMobile" onClick={() => {
-                 const sideBarCloser = document.getElementById("sidebar-menu");
-                 sideBarCloser.style.visibility = "hidden"
-                 sideBarCloser.style.left = "-250px"               
-              }} to="/about">About</NavLink>
-              <NavLink className="navBarMobile" onClick={() => {
-                 const sideBarCloser = document.getElementById("sidebar-menu");
-                 sideBarCloser.style.visibility = "hidden"
-                 sideBarCloser.style.left = "-250px"
-              }} to="/rezume">Rezume</NavLink>
-              <NavLink className="navBarMobile" onClick={() => {
-                const sideBarCloser = document.getElementById("sidebar-menu");
-                sideBarCloser.style.visibility = "hidden"
-                sideBarCloser.style.left = "-250px"               
-              }} to="/contact">Contact</NavLink>
+              <NavLink className="navBarMobile" onClick={outsideCloser} to="/">Home</NavLink>
+              <NavLink className="navBarMobile" onClick={outsideCloser} to="/projects">Projects</NavLink>
+              <NavLink className="navBarMobile" onClick={outsideCloser} to="/about">About</NavLink>
+              <NavLink className="navBarMobile" onClick={outsideCloser} to="/rezume">Rezume</NavLink>
+              <NavLink className="navBarMobile" onClick={outsideCloser} to="/contact">Contact</NavLink>
           </header>
             <div id="overlay"></div>
               </nav>
@@ -102,12 +81,12 @@ function App() {
 
         </div>
         <Routes>
-            <Route path="/" element={<HomePage changingMode={changingMode} />}/>
-            <Route path="/rezume" element={<RezumePage changingMode={changingMode} />}/>
-            <Route path="/projects" element={<ProjectsPage changingMode={changingMode} />}/>
-            <Route path="/about" element={<AboutPage changingMode={changingMode} />}/>
-            <Route path="/contact" element={<ContactPage changingMode={changingMode} />}/>
-            <Route path="*" element={<NotFoundPage changingMode={changingMode} />}/>
+            <Route path="/" element={<HomePage changingMode={changingMode} outsideCloser={outsideCloser}/>}/>
+            <Route path="/rezume" element={<RezumePage changingMode={changingMode} outsideCloser={outsideCloser}/>}/>
+            <Route path="/projects" element={<ProjectsPage changingMode={changingMode} outsideCloser={outsideCloser}/>}/>
+            <Route path="/about" element={<AboutPage changingMode={changingMode} outsideCloser={outsideCloser}/>}/>
+            <Route path="/contact" element={<ContactPage changingMode={changingMode} outsideCloser={outsideCloser}/>}/>
+            <Route path="*" element={<NotFoundPage changingMode={changingMode} outsideCloser={outsideCloser}/>}/>
         </Routes>
       </div>
     </>

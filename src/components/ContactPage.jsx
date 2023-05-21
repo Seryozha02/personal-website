@@ -1,8 +1,10 @@
 import "./ContactPage.css"
 
-function ContactPage({changingMode}) {
+function ContactPage({changingMode, outsideCloser}) {
     return (
-        <div className={changingMode === "light" ? "contactPage" : "contactPageDarkMode"}>
+        <div className={changingMode === "light" ? "contactPage" : "contactPageDarkMode"} onClick={() => {
+            outsideCloser()
+        }}>
             <h1 className={changingMode === "light" ? "pageTittle" : "pageTittleDarkMode"}>Contact Me</h1>
 
             <div className="divForContactPart">

@@ -5,10 +5,13 @@ import guitar from "../Images/guitar.jpg"
 import chess from "../Images/chess.png";
 import chooseMe from "../Images/chooseMe.jpeg"
 
-function AboutPage({ changingMode }) {
+function AboutPage({ changingMode, outsideCloser }) {
   return (
     <div
-      className={changingMode === "light" ? "aboutPage" : "aboutPageDarkMode"}
+      className={changingMode === "light" ? "aboutPage" : "aboutPageDarkMode"} 
+      onClick={() => {
+        outsideCloser()
+    }}
     >
       <h1
         className={
@@ -29,8 +32,8 @@ function AboutPage({ changingMode }) {
               Everything started when I was a child and got my first computer. It was an obscure device for me to want
               to explore everything in it and then it's began - finding and losting,
               opening and closing, downloading and deleting and etc.Keeping it all going
-              իn adolescence I fully realized that I want to master a profession that will be related to computers, creativity, innovation -
-               whic is a programmer.
+              in adolescence I fully realized that I want to master a profession that will be related to computers, creativity, innovation -
+               which is a programmer.
             </span>
           </div>
         </div>
@@ -43,7 +46,8 @@ function AboutPage({ changingMode }) {
             <br />
              At Relq school has started my studying for 6 months. It was full-stack development
              but for a start I chose front-end branch. Then finishing it I have continued my courses at Armenian Code Academy, also for 6 months.
-             In ACA first 3 months I deepened my knowledge of JavaScript, after it React.js. So now I'm skilled in HTML5, CSS3, JS/ES6, React.js, MUI, GIT, GitHub.
+             In ACA first 3 months I deepened my knowledge of JavaScript, after it React.js.
+             So now I'm skilled in HTML5, CSS3, JS/ES6, React.js, MUI, GIT, GitHub.
              Also famialrity with Redux, MySQL, and JAVA (but want to learn Node.js).
             </span>
           </div>         
@@ -57,7 +61,8 @@ function AboutPage({ changingMode }) {
             <br />
               A little information about my hobbies.
               At free time I'm playing chess. I learned to play it at a young age but started regularly play and develop my skills since 2022 year.
-              Two of my friends has hosted me, I brought chess to play and from there and it started,to play chess almost every day. I don't have a degree in chess yet, but I think I will
+              Two of my friends has hosted me, I brought chess to play and from there and it started,to play chess almost every day. I don't have a degree in chess yet,
+              but I think I will
               in the near future.
             </span>
           </div>
@@ -69,10 +74,10 @@ function AboutPage({ changingMode }) {
             <span>
             <p><b>PLAY THE GUITAR</b></p>
             <br />
-              As I like to listen music, I have to master in one of  musical instruments and that was a guitar.
+              As I like to listen music, I have to master in one of musical instruments and that was a guitar.
               When I have some errors or bugs - playing guitar the only one thing that can help me to relax me
-               when I'm angry, nervous or not in myself, just kidding.
-               It helps me relax, refresh and get on with my work.
+              when I'm angry, nervous or not in myself, just kidding.
+              It helps me relax, refresh and get on with my work.
               Despite playing guitar or just listening, are sospleasent.
             </span>
           </div>         

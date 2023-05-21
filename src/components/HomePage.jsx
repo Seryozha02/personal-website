@@ -7,7 +7,7 @@ import facebookIcon from "../Images/facebookIcon.png"
 import instagramIcon from "../Images/instagramIcon.png"
 
 
-function HomePage({changingMode}) {
+function HomePage({changingMode, outsideCloser}) {
   const projectNavigate = useNavigate()
 
   function navigateToProjects() {
@@ -16,7 +16,10 @@ function HomePage({changingMode}) {
 
   return (
     <>
-    <div className={changingMode === "light" ? "homePage" : "homePageDarkMode"}>
+    <div className={changingMode === "light" ? "homePage" : "homePageDarkMode"}
+    onClick={() => {
+      outsideCloser()
+  }}>
     <div>
         <h1 className={changingMode === "light" ? "pageTittle" : "pageTittleDarkMode"}>Home Page</h1>
       </div>
@@ -24,19 +27,18 @@ function HomePage({changingMode}) {
       <div className="homePageBothSides">
             <div className={changingMode === "light" ? "homePageLeftSide" : "homePageLeftSideDarkMode"}>
               <p>Hello everyone</p>
-              <p>and welcome, it's</p>
+              <p>and welcome, I'm</p>
               <h1>Seryozha Asatryan</h1>
-              <p>and I'm a Front-End developer.</p>
+              <p>and a Front-End developer.</p>
                     <br />
               <span>
-                This is my Web Site which was created by me. <br /> 
-                More information about me you can see in pages on the top.
+                This is my Web Site - created by me. <br /> 
+                It will help you to get a lot of information about me.
               </span>
                 <div className="divForButtons">
                     <button onClick={navigateToProjects}>See Projects</button> <br />
                     <Link to="https://www.linkedin.com/in/seryozha-asatryan-7a4267230/" target="_blank"><img src={linkedInIcon} alt="" /></Link>
                     <Link to="https://github.com/Seryozha02" target="_blank"><img src={githubIcon} alt="" /></Link>
-                    <Link to="https://www.facebook.com/seroj.asatryan.71" target="_blank"><img src={facebookIcon} alt="" /></Link>
                     <Link to="https://instagram.com/seroj_0801?igshid=OTJhZDVkZWE=" target="_blank"><img src={instagramIcon} alt="" /></Link>                    
                 </div>
             </div>

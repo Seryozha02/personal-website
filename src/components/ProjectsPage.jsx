@@ -12,7 +12,7 @@ import photosSearcher from "../Images/photosSearcher.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function ProjectsPage({changingMode}) {
+function ProjectsPage({changingMode, outsideCloser}) {
   const texts = [
     "This project will help you to get any cities weather around the world and not only weather,or you can just get device's location's weather.",
     "Location App I created based on weather App, by this project I wanted to get info about device's location, and in this photo is my device's location. ",
@@ -36,7 +36,9 @@ function ProjectsPage({changingMode}) {
   }
 
   return (
-    <div className={changingMode === "light" ? "divForProjectsPage" : "divForProjectsPageDarkMode"}>
+    <div className={changingMode === "light" ? "divForProjectsPage" : "divForProjectsPageDarkMode"} onClick={() => {
+      outsideCloser()
+  }}>
       <h1 className={changingMode === "light" ? "pageTittle" : "pageTittleDarkMode"}>Projects</h1>
       <div className={changingMode === "light" ? "projectsBothSides" : "projectsBothSidesDarkMode"}>
         <div className={changingMode === "light" ? "projectLeftSide" : "projectLeftSideDarkMode"}>

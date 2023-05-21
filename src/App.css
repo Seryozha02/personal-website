@@ -197,7 +197,6 @@
   position: relative;
   font-size: 22px;
   text-decoration: none;
-  /* transition: 0.4s ease-in-out; */
 }
 
 .navBarMobile.active {
@@ -205,18 +204,13 @@
 }
 
 
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+/* #hamburger-input:checked + #hamburger-menu {
     visibility: visible;
     left: 0;
-}
+} */
 
 
 @media screen and (max-width: 750px) {
-  
-/* #hamburger-input:checked ~ #overlay{
-  visibility: visible;
-  opacity: 0.5;
-} */
 
   .navBar {
     display: none;
