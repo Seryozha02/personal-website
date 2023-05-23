@@ -14,16 +14,16 @@ import { useState } from "react";
 
 function ProjectsPage({changingMode, outsideCloser}) {
   const texts = [
-    "This project will help you to get any cities weather around the world and not only weather,or you can just get device's location's weather.",
-    "Location App I created based on weather App, by this project I wanted to get info about device's location, and in this photo is my device's location. ",
-    "This one is for generating an any QR Code with some info, it's can be everything that you will want - text, number, link etc.",
-    "The previous project was Qr Code Generator and I couldn't create a project for scanning it, and here is - you should to download a photo of QR Code and that's it, project will show you the info inside it.",
-    "GitHub's users searcher is one of my first projects, you need to write an any GitHub user's name and after it you will get info about they.",
-    "This is a real clone of Web Work web-site. In photo is so little information about project. It's bigger than it looks, so check the source code.  ",
-    "Emoji Searcher I created after finishing my courses of React.js and wanted to create any project and found it for an example, so I did it.",
-    "This is famous and popular To-Do List. I created it with JS too, but beacuse I like to work with React.js -  it's in list of React Projects.",
-    "Through Photo Searcher you can get photo about everything, you should to write a word and click on Search button.",
-    "For this project I used a charts from chartjs.org and by API I got nformation about list of deaths due to covid in LA.",
+    "This app will help you to get weather for any city around the world. And not only weather. You can also get the weather of your device location without any efforts.",
+    "I created this app based on the Weather app. With this you can get info about your device's location. The photo shows my device's location.",
+    "This one is for generating any QR code with some info. It can be everything you want – text, number, link, etc.",
+    "As I created QR code generator I couldn’t help myself and not to create also a QR scanner. You just need to download a photo of QR code and that's it! The app will show you all the info inside it.",
+    "GitHub's user’s searcher is one of my first projects. You need to input any GitHub's user's name and after it you will get info about them.",
+    "This is a real clone of Web Work web-site. The photo above shows just a bit of the info about the project. It's bigger than it looks, so check the source code.",
+    "I created Emoji Searcher after finishing my courses of React.js. just to practice my knowledge.",
+    "This is the famous and popular To-Do List. I have created this with JS before. But as I like and prefer working with React.js, I made one more with React.js.",
+    "With the Photo Searcher you can find any image you want. You just need to write down the word and click on the Search button.",
+    "I used charts from Chartjs.org for this project and I got the list of deaths due to covid in LA with API.",
   ];
 
   const [showMore, setShowMore] = useState([]);
