@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.453805de.css",
-    "main.js": "/personal-website/static/js/main.91ee03f6.js",
+    "main.css": "/personal-website/static/css/main.ec14a239.css",
+    "main.js": "/personal-website/static/js/main.6486cde1.js",
     "static/js/787.e1498aa9.chunk.js": "/personal-website/static/js/787.e1498aa9.chunk.js",
     "static/media/locationApp.png": "/personal-website/static/media/locationApp.b86a7d9c96b28ee9da9b.png",
     "static/media/photosSearcher.png": "/personal-website/static/media/photosSearcher.4ebb368df110285d7bf6.png",
@@ -11,23 +11,23 @@
     "static/media/SeryozhaAsatryanCVimg.png": "/personal-website/static/media/SeryozhaAsatryanCVimg.8f62b420ab3123d61a8e.png",
     "static/media/SeryozhaAsatryan.jpg": "/personal-website/static/media/SeryozhaAsatryan.727b3dbe83f75bf22134.jpg",
     "static/media/guitar.jpg": "/personal-website/static/media/guitar.5c0850303dd896978439.jpg",
-    "static/media/oldPC.png": "/personal-website/static/media/oldPC.17795792efbaeed8cfb7.png",
     "static/media/diagramReact.png": "/personal-website/static/media/diagramReact.5a34e3f724c0e04b1a10.png",
     "static/media/chooseMe.jpeg": "/personal-website/static/media/chooseMe.623dc48c226557ae6c52.jpeg",
     "static/media/coding.jpg": "/personal-website/static/media/coding.16804f992f1025986559.jpg",
     "static/media/emojiSearcher.png": "/personal-website/static/media/emojiSearcher.26afdc6941c7bf6eda5f.png",
     "static/media/weatherApp.png": "/personal-website/static/media/weatherApp.e65caf903bc8f6a3a6f3.png",
     "static/media/qrCodeGenerator.png": "/personal-website/static/media/qrCodeGenerator.e9e66579de5768ef4cda.png",
+    "static/media/oldPC.jpg": "/personal-website/static/media/oldPC.2c82c0053778519be7ea.jpg",
     "static/media/qrCodeScanner.png": "/personal-website/static/media/qrCodeScanner.056fc2945707db36aa44.png",
     "static/media/toDoReact.png": "/personal-website/static/media/toDoReact.01e4c06d0b93e5f810d6.png",
     "static/media/IDK.png": "/personal-website/static/media/IDK.34978605d92a42d5e3a1.png",
     "index.html": "/personal-website/index.html",
-    "main.453805de.css.map": "/personal-website/static/css/main.453805de.css.map",
-    "main.91ee03f6.js.map": "/personal-website/static/js/main.91ee03f6.js.map",
+    "main.ec14a239.css.map": "/personal-website/static/css/main.ec14a239.css.map",
+    "main.6486cde1.js.map": "/personal-website/static/js/main.6486cde1.js.map",
     "787.e1498aa9.chunk.js.map": "/personal-website/static/js/787.e1498aa9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.453805de.css",
-    "static/js/main.91ee03f6.js"
+    "static/css/main.ec14a239.css",
+    "static/js/main.6486cde1.js"
   ]
 }
