@@ -1,5 +1,5 @@
 import "./AboutPage.css";
-import oldPC from "../Images/oldPC.png";
+import oldPC from "../Images/oldPC.jpg";
 import coding from "../Images/coding.jpg";
 import guitar from "../Images/guitar.jpg";
 import chess from "../Images/chess.png";

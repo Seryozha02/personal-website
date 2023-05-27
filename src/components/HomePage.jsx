@@ -3,7 +3,6 @@ import SeryozhaAsatryan from "../Images/SeryozhaAsatryan.jpg"
 import {Link, useNavigate} from 'react-router-dom';
 import linkedInIcon from "../Images/linkedinIcon.png"
 import githubIcon from "../Images/githubIcon.png"
-import facebookIcon from "../Images/facebookIcon.png"
 import instagramIcon from "../Images/instagramIcon.png"
 
 
@@ -39,7 +38,7 @@ function HomePage({changingMode, outsideCloser}) {
                     <button onClick={navigateToProjects}>See Projects</button> <br />
                     <Link to="https://www.linkedin.com/in/seryozha-asatryan-7a4267230/" target="_blank"><img src={linkedInIcon} alt="" /></Link>
                     <Link to="https://github.com/Seryozha02" target="_blank"><img src={githubIcon} alt="" /></Link>
-                    <Link to="https://instagram.com/seroj_0801?igshid=OTJhZDVkZWE=" target="_blank"><img src={instagramIcon} alt="" /></Link>                    
+                    <Link to="https://www.instagram.com/serozh_0801/?igshid=ZGUzMzM3NWJiOQ%3D%3D" target="_blank"><img src={instagramIcon} alt="" /></Link>                    
                 </div>
             </div>
 
