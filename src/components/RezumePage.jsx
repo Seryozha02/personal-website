@@ -38,9 +38,9 @@ function RezumePage({changingMode, outsideCloser}) {
                 <img className="myCV" src={CV} alt="" />
             </div>
             <div className={changingMode === "light" ? "downloadButtons" : "downloadButtonsDarkMode"}>
-                <button className="downloadCV" onClick={cvDownloadPDF}>Download CV as PDF</button>
+                <button className={changingMode === "light" ? "downloadCV" : "downloadCVDarkMode"} onClick={cvDownloadPDF}>Download CV as PDF</button>
                 <p>or</p>
-                <button className="downloadCV" onClick={cvDownloadPNG}>Download CV as PNG</button>
+                <button className={changingMode === "light" ? "downloadCV" : "downloadCVDarkMode"} onClick={cvDownloadPNG}>Download CV as PNG</button>
             </div>
         </div>
     )

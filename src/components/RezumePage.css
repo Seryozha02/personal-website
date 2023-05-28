@@ -40,6 +40,18 @@
     color: white;
     font-size: 15px;
     cursor: pointer;
+    transition: 2s ease-in-out;
+}
+
+.downloadCVDarkMode {
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 63, 139);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 2s ease-in-out;
 }
 
 .spanForRezume {

@@ -35,7 +35,7 @@ function HomePage({changingMode, outsideCloser}) {
                 It will help you to get a lot of information about me.
               </span>
                 <div className="divForButtons">
-                    <button onClick={navigateToProjects}>See Projects</button> <br />
+                    <button className={changingMode === "light" ? "seeProjectsButton" : "seeProjectsButtonDarkMode"} onClick={navigateToProjects}>See Projects</button> <br />
                     <Link to="https://www.linkedin.com/in/seryozha-asatryan-7a4267230/" target="_blank"><img src={linkedInIcon} alt="" /></Link>
                     <Link to="https://github.com/Seryozha02" target="_blank"><img src={githubIcon} alt="" /></Link>
                     <Link to="https://www.instagram.com/serozh_0801/?igshid=ZGUzMzM3NWJiOQ%3D%3D" target="_blank"><img src={instagramIcon} alt="" /></Link>                    

@@ -160,6 +160,7 @@
     color: white;
     font-size: 18px;
     cursor: pointer;
+    transition: 2s ease-in-out;
 }
 
 .sourceCodeButtonDarkMode {
@@ -170,7 +171,7 @@
     justify-content: center;
     align-items: center;
     border: none;
-    background-color: #49f;
+    background-color: rgb(0, 63, 139);
     color: whitesmoke;
     font-size: 18px;
     cursor: pointer;
@@ -202,7 +203,8 @@ span button {
 
 .projectsBothSidesDarkMode span button {
     padding: 5px 15px;
-    background-color: rgb(125, 120, 120);
+    background-color: rgb(80, 80, 80);
+    border: 1px rgb(80, 80, 80) solid;
     color: whitesmoke;
     border-radius: 5px;
     font-size: 15px;
