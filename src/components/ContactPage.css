@@ -1,7 +1,7 @@
  .contactPage {
     display: flex;
     flex-direction: column;
-    row-gap: 80px;
+    row-gap: 50px;
     min-height: 100vh;
     transition: 2s ease-in-out;
 }
@@ -10,7 +10,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    row-gap: 80px;
+    row-gap: 50px;
     background-color: rgb(40, 40, 40);
     transition: 2s ease-in-out;
 }
@@ -91,7 +91,7 @@ textarea::placeholder {
 
 @media only screen and (max-width: 600px) {
     .contactPage, .contactPageDarkMode {
-        row-gap: 100px;
+        row-gap: 50px;
     }
 
     .divForContactPart, .divForContactPartDarkMode {
