@@ -177,11 +177,11 @@
     }
 
     .infoForLeft span, .infoForLeftDarkMode span{
-        width: 300px;
+        width: 290px;
     }
     
     .infoForRight span, .infoForRightDarkMode span {
-            width: 300px;
+            width: 290px;
         }
 
     .divForTwoSides, .divForTwoSidesDarkMode {
