@@ -1,5 +1,5 @@
 import "./HomePage.css"
-import SeryozhaAsatryan from "../Images/SeryozhaAsatryan.jpg"
+import SeryozhaAsatryan from "../Images/SeryozhaAsatryan1.jpg"
 import {Link, useNavigate} from 'react-router-dom';
 import linkedInIcon from "../Images/linkedinIcon.png"
 import githubIcon from "../Images/githubIcon.png"
