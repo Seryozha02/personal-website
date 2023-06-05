@@ -1,5 +1,5 @@
 import "./HomePage.css"
-import SeryozhaAsatryan from "../Images/SeryozhaAsatryan1.jpg"
+import SeryozhaAsatryan from "../Images/SeryozhaAsatryan.jpg"
 import {Link, useNavigate} from 'react-router-dom';
 import linkedInIcon from "../Images/linkedinIcon.png"
 import githubIcon from "../Images/githubIcon.png"
@@ -27,12 +27,12 @@ function HomePage({changingMode, outsideCloser}) {
             <div className={changingMode === "light" ? "homePageLeftSide" : "homePageLeftSideDarkMode"}>
               <p>Hello everyone</p>
               <p>and welcome, I'm</p>
-              <h1>Seryozha Asatryan</h1>
-              <p>and a Front-End developer.</p>
+              <h1>Seryozha Asatryan -</h1>
+              <p>Front-End developer.</p>
                     <br />
               <span>
                 This is my Web Site - created by me. <br /> 
-                It will help you to get a lot of information about me.
+                It will help you get a lot of information about me.
               </span>
                 <div className="divForButtons">
                     <button className={changingMode === "light" ? "seeProjectsButton" : "seeProjectsButtonDarkMode"} onClick={navigateToProjects}>See Projects</button> <br />

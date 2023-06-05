@@ -154,6 +154,7 @@
         flex-direction: column;
         row-gap: 15px;
     }
+
     .infoForRight, .infoForRightDarkMode {
         display: flex;
         flex-direction: column;
@@ -178,6 +179,10 @@
 
     .infoForLeft span, .infoForLeftDarkMode span{
         width: 290px;
+    }
+
+    .infoForLeft span:nth-child(3) {
+        height: 410px;
     }
     
     .infoForRight span, .infoForRightDarkMode span {

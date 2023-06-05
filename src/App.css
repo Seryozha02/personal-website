@@ -203,13 +203,6 @@
   color: rgb(152, 198, 255);
 }
 
-
-/* #hamburger-input:checked + #hamburger-menu {
-    visibility: visible;
-    left: 0;
-} */
-
-
 @media screen and (max-width: 750px) {
 
   .navBar {

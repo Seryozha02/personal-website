@@ -44,13 +44,13 @@ function AboutPage({ changingMode, outsideCloser }) {
                 <b>MY OLD PC</b>
               </p>
               <br />
-              Everything started when I was a child and got my first computer.
+              Everything started when I was a child and got my first computer in 2011.
               It was an obscure device for me - I wanted to explore everything
               in it. And then my journey began - finding and losing, opening and
               closing, downloading and deleting, etc. And when I was a teenager,
               I fully realized that I wanted to master a profession that would
               be related to computers, creativity, innovation – and that was the
-              programmer.
+              programmer.Now programming is both my hobby and profession.
             </span>
           </div>
         </div>

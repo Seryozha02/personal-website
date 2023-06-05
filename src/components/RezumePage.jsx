@@ -33,7 +33,7 @@ function RezumePage({changingMode, outsideCloser}) {
             outsideCloser()
         }}>
             <h1 className={changingMode === "light" ? "pageTittle" : "pageTittleDarkMode"}>Rezume</h1>
-            <span className="spanForRezume">Here is my CV, if you interested you can download it.</span>
+            <span className="spanForRezume">Here is my CV, if you are interested, you can download it.</span>
             <div className="divForRezume">
                 <img className="myCV" src={CV} alt="" />
             </div>
