@@ -3,39 +3,42 @@ import CV from "../Images/SeryozhaAsatryanCVimg.png";
 import axios from "axios";
 
 function RezumePage({ changingMode, outsideCloser }) {
-  async function cvDownloadPDF() {
-    try {
-      const fileURL = process.env.PUBLIC_URL + '/SeryozhaAsatryanCV.pdf';
-      const response = await axios.get(fileURL, {
-        responseType: 'blob',
+ function cvDownloadPDF() {
+    const fileURL = process.env.PUBLIC_URL + "/SeryozhaAsatryanCV.pdf";
+    const providedTime = new Date().getTime();
+
+    fetch(`${fileURL}?v=${providedTime}`)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let linkPDF = document.createElement("a");
+        linkPDF.href = fileURL;
+        linkPDF.download = "SeryozhaAsatryanCV.pdf";
+        linkPDF.click();
+      })
+      .catch((error) => {
+        console.log(error);
       });
-      const blob = response.data;
-      const fileURL3 = window.URL.createObjectURL(blob);
-      let linkPDF = document.createElement('a');
-      linkPDF.href = fileURL3;
-      linkPDF.download = 'SeryozhaAsatryanCV.pdf';
-      linkPDF.click();
-    } catch (error) {
-      console.log(error);
-    }
   }
 
-  async function cvDownloadPNG() {
-    try {
-      const fileURL2 = process.env.PUBLIC_URL + '/SeryozhaAsatryanCVimg.png';
-      const response = await axios.get(fileURL2, {
-        responseType: 'blob',
+  function cvDownloadPNG() {
+    const fileURL2 = process.env.PUBLIC_URL + "/SeryozhaAsatryanCVimg.png";
+    const providedTime2 = new Date().getTime();
+
+    fetch(`${fileURL2}?v=${providedTime2}`)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const fileURL2 = window.URL.createObjectURL(blob);
+        let linkPNG = document.createElement("a");
+        linkPNG.href = fileURL2;
+        linkPNG.download = "SeryozhaAsatryanCVimg.png";
+        linkPNG.click();
+      })
+      .catch((error2) => {
+        console.log(error2);
       });
-      const blob = response.data;
-      const fileURL23 = window.URL.createObjectURL(blob);
-      let linkPNG = document.createElement('a');
-      linkPNG.href = fileURL23;
-      linkPNG.download = 'SeryozhaAsatryanCVimg.png';
-      linkPNG.click();
-    } catch (error) {
-      console.log(error);
-    }
   }
+
 
   return (
     <div
