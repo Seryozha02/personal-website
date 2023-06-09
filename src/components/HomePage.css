@@ -104,8 +104,8 @@
 }
 
 .homePageRightSide img {
-    width: 350px;
-    height: 500px;
+    width: 420px;
+    height: 400px;
     border-radius: 20px;
 }
 
@@ -144,11 +144,6 @@
 
 
 @media only screen and (max-width: 1100px) {
-    .homePageRightSide img {
-        width: 300px;
-        height: 450px;
-    }
-
     .homePageBothSides {
         column-gap: 50px;
     }
@@ -158,12 +153,12 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 880px) {
     .homePageRightSide img {
-        width: 300px;
-        height: 450px;
+        width: 350px;
+        height: 330px;
     }
-
+    
     .homePageBothSides {
         display: flex;
         flex-direction: column-reverse;
