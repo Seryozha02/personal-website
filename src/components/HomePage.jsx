@@ -31,7 +31,7 @@ function HomePage({changingMode, outsideCloser}) {
               <p>Front-End developer.</p>
                     <br />
               <span>
-                This is my Web Site - created by me. <br /> 
+                This is my Personal Website - created by me.<br /> 
                 It will help you get a lot of information about me.
               </span>
                 <div className="divForButtons">
