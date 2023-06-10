@@ -65,6 +65,7 @@ form textarea {
 
 textarea::placeholder { 
     text-align: center;
+    padding: 40px;
 }
 
 .sendMeButton {
@@ -114,6 +115,10 @@ textarea::placeholder {
         font-size: 13px;
         width: 300px;
         height: 80px;
+    }
+
+    textarea::placeholder { 
+        padding: 30px;
     }
 
     form button {
