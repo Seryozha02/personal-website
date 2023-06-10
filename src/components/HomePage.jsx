@@ -32,7 +32,7 @@ function HomePage({changingMode, outsideCloser}) {
                     <br />
               <span>
                 This is my Personal Website - created by me.<br /> 
-                It will help you get a lot of information about me.
+                It will help you to get a lot of information about me.
               </span>
                 <div className="divForButtons">
                     <button className={changingMode === "light" ? "seeProjectsButton" : "seeProjectsButtonDarkMode"} onClick={navigateToProjects}>See Projects</button> <br />
