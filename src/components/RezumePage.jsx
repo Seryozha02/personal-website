@@ -1,6 +1,5 @@
 import "./RezumePage.css";
 import CV from "../Images/SeryozhaAsatryanCVimg.png";
-import axios from "axios";
 
 function RezumePage({ changingMode, outsideCloser }) {
  function cvDownloadPDF() {
